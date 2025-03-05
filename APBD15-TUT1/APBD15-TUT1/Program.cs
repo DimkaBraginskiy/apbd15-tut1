@@ -23,12 +23,12 @@ class Program
     static double GetAverage(double[] array)
     {
         double sum = 0;
-        int count = array.Length;
+        int counter = array.Length;
         foreach(double num in array)
         {
             sum += num;
         }
-        return sum/count;
+        return sum/counter;
     }
 
     static double GetMax(double[] array)
