@@ -16,7 +16,8 @@ class Program
 
         double[] arr = { 1, 2, 3.5, 4, 5 };
 
-        Console.WriteLine(GetAverage(arr));
+        Console.WriteLine("Average: " + GetAverage(arr));
+        Console.WriteLine("Max: " + GetMax(arr));
     }
     
     static double GetAverage(double[] array)
@@ -28,6 +29,19 @@ class Program
             sum += num;
         }
         return sum/count;
+    }
+
+    static double GetMax(double[] array)
+    {
+        double res = 0;
+        foreach (double num in array)
+        {
+            if (num > res)
+            {
+                res = num;
+            }
+        }
+        return res;
     }
 }
 
