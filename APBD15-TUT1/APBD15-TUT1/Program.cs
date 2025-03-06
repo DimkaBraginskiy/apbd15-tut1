@@ -24,9 +24,9 @@ class Program
     {
         double sum = 0;
         int count = array.Length;
-        foreach(double num in array)
+        foreach(double number in array)
         {
-            sum += num;
+            sum += number;
         }
         return sum/count;
     }
